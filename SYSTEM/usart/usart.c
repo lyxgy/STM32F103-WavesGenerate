@@ -74,6 +74,10 @@ u8 USART_RX_BUF[USART_REC_LEN];     //接收缓冲,最大USART_REC_LEN个字节.
 //bit13~0，	接收到的有效字节数目
 u16 USART_RX_STA=0;       //接收状态标记	  
 uint8_t cmd_index = 0;
+uint8_t Sine_flag = 1;
+uint8_t Sq_flag = 1;
+uint8_t Tri_flag = 1;
+uint8_t Saw_flag = 1;
 
 void uart_init(u32 bound){
   //GPIO端口设置
@@ -162,6 +166,7 @@ void process_command(char *cmd) {
 		uint32_t freq = 0;
 		uint8_t duty = 0;
 		uint8_t amplitude = 0;
+		
     printf("CMD: %s\r\n", cmd);
     
     
@@ -173,24 +178,45 @@ void process_command(char *cmd) {
             
             if(strcmp(value, "SINE") == 0) {
                 change_waveform(SINE_WAVE);
+								if(Sine_flag == 1){
+									set_frequency(20000);
+									set_amplitude(62);
+								}
+								
             } else if(strcmp(value, "SQUARE") == 0) {
                 change_waveform(SQUARE_WAVE);
+								if(Sq_flag == 1){
+									set_frequency(2000);
+									set_amplitude(62);
+								}
             } else if(strcmp(value, "TRIANGLE") == 0) {
                 change_waveform(TRIANGLE_WAVE);
+								if(Tri_flag == 1){
+									set_frequency(2000);
+									set_amplitude(62);
+								}
+								
+            }else if(strcmp(value, "SAWTOOTH") == 0) {
+                change_waveform(SAWTOOTH_WAVE);
+								if(Saw_flag == 1){
+									set_frequency(2000);
+									set_amplitude(62);
+								}
+								
             }
         } 
         else if(strcmp(type, "FREQ") == 0) {
-            // ????
+            
             freq = atoi(value);
             set_frequency(freq);
         }
         else if(strcmp(type, "DUTY") == 0) {
-            // ?????
+            
             duty = atoi(value);
             set_square_duty(duty);
         }
         else if(strcmp(type, "AMP") == 0) {
-            // ????
+            
             amplitude = atoi(value);
             set_amplitude(amplitude);
         }

@@ -33,3 +33,4 @@
 ..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\main.o: dac.h
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
+..\obj\main.o: ..\SYSTEM\delay\delay.h

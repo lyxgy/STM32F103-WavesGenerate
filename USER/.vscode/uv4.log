@@ -1,0 +1,4 @@
+Load "..\\OBJ\\ADC.axf" 
+No ST-LINK detected
+Error: Flash Download failed  -  Target DLL has been cancelled
+Flash Load finished at 09:30:25

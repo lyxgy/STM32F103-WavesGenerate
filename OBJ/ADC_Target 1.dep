@@ -1,6 +1,6 @@
 Dependencies for Project 'ADC', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060528::V5.06 update 5 (build 528)::ARMCC
-F (.\main.c)(0x684BBEFC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\ADC -I ..\HARDWARE\SMG -I ..\HARDWARE\TIMER-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x684E290C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\ADC -I ..\HARDWARE\SMG -I ..\HARDWARE\TIMER-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x661E99A8)
 I (..\USER\stm32f10x.h)(0x661E9996)
 I (..\CORE\core_cm3.h)(0x661E997A)
@@ -223,7 +223,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x661E999A)
 I (..\HARDWARE\LED\led.h)(0x68481B3C)
-F (.\dac.c)(0x684BCE04)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\ADC -I ..\HARDWARE\SMG -I ..\HARDWARE\TIMER-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\dac.o --omf_browse ..\obj\dac.crf --depend ..\obj\dac.d)
+F (.\dac.c)(0x684E6B80)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\ADC -I ..\HARDWARE\SMG -I ..\HARDWARE\TIMER-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\dac.o --omf_browse ..\obj\dac.crf --depend ..\obj\dac.d)
 I (..\SYSTEM\sys\sys.h)(0x661E99A8)
 I (..\USER\stm32f10x.h)(0x661E9996)
 I (..\CORE\core_cm3.h)(0x661E997A)
@@ -318,7 +318,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x661E999A)
-F (..\SYSTEM\usart\usart.c)(0x684BCF2D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\ADC -I ..\HARDWARE\SMG -I ..\HARDWARE\TIMER-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+F (..\SYSTEM\usart\usart.c)(0x684E2CDE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\ADC -I ..\HARDWARE\SMG -I ..\HARDWARE\TIMER-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
 I (..\SYSTEM\sys\sys.h)(0x661E99A8)
 I (..\USER\stm32f10x.h)(0x661E9996)
 I (..\CORE\core_cm3.h)(0x661E997A)
@@ -1023,4 +1023,4 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x661E99A0)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x661E999A)
-F (..\README.TXT)(0x684B89D9)()
+F (..\README.TXT)(0x00000000)()

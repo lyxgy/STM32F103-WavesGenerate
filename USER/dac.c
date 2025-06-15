@@ -94,6 +94,7 @@ uint16_t current_wave_length = sizeof(sin_wave)/sizeof(uint16_t);
 
 uint32_t new_arr = (72000000 / (20000 * 64)) - 1; 
 
+uint16_t duty_flag = 0;
 void dac_config_init(void)
 {
 
@@ -157,8 +158,10 @@ void dac_config_init(void)
 }
 
 void change_waveform(WaveType wave_type) {
-    if(wave_type == current_wave_type) return;
+    //if(wave_type == current_wave_type) return;
     
+		
+	
     DAC_Cmd(DAC_Channel_1, DISABLE);
     DMA_Cmd(DMA2_Channel3, DISABLE);
     
@@ -195,6 +198,12 @@ void change_waveform(WaveType wave_type) {
     DAC_Cmd(DAC_Channel_1, ENABLE);
     
     current_wave_type = wave_type;
+		
+		if(current_wave_type == SINE_WAVE) set_frequency(20000);
+		else set_frequency(2000);
+		
+		set_amplitude(62);
+			
     printf("Wave changed: %d\r\n", wave_type);
 }
 
@@ -221,12 +230,15 @@ void set_square_duty(uint8_t duty) {
 		uint16_t high_points = 0;
     if(duty > 100) duty = 100;
     
+		
     // ??????????
     if(current_wave_type != SQUARE_WAVE) {
         printf("Duty only for square wave!\r\n");
         return;
     }
     
+		
+		
 		high_points = (current_wave_length * duty) / 100;
     
     // ??????
@@ -241,6 +253,7 @@ void set_square_duty(uint8_t duty) {
     // ??DMA(????????)
     change_waveform(SQUARE_WAVE);
     
+		
     printf("Duty set: %d%%\r\n", duty);
 }
 

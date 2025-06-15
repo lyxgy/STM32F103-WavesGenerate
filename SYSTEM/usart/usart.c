@@ -178,30 +178,19 @@ void process_command(char *cmd) {
             
             if(strcmp(value, "SINE") == 0) {
                 change_waveform(SINE_WAVE);
-								if(Sine_flag == 1){
-									set_frequency(20000);
-									set_amplitude(62);
-								}
+								
 								
             } else if(strcmp(value, "SQUARE") == 0) {
                 change_waveform(SQUARE_WAVE);
-								if(Sq_flag == 1){
-									set_frequency(2000);
-									set_amplitude(62);
-								}
+								
+								
             } else if(strcmp(value, "TRIANGLE") == 0) {
                 change_waveform(TRIANGLE_WAVE);
-								if(Tri_flag == 1){
-									set_frequency(2000);
-									set_amplitude(62);
-								}
+							
 								
             }else if(strcmp(value, "SAWTOOTH") == 0) {
                 change_waveform(SAWTOOTH_WAVE);
-								if(Saw_flag == 1){
-									set_frequency(2000);
-									set_amplitude(62);
-								}
+								
 								
             }
         } 

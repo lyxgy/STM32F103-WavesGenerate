@@ -94,7 +94,6 @@ uint16_t current_wave_length = sizeof(sin_wave)/sizeof(uint16_t);
 
 uint32_t new_arr = (72000000 / (20000 * 64)) - 1; 
 
-uint16_t duty_flag = 0;
 void dac_config_init(void)
 {
 
